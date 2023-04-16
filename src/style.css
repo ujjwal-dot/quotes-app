@@ -1,22 +1,153 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@200&family=Montserrat:wght@100&family=Ubuntu:wght@300&display=swap');
 
 body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f1f1f1;
+    /* font-family: 'Roboto', sans-serif; */
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
 }
 
+.nav-container {
+    padding: 5px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-container Link {
+    padding: 20px 50px;
+}
+
+
 .quote-generator {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 60vh;
+    padding: 20px;
+    margin-top: 100px;
+
 }
 
 .quote-container {
+    background-color: #d05252;
+    border-radius: 20px;
+    width: 40vw;
+    height: 20vh;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+}
+
+.quote-text {
+    font-size: 24px;
+    /* font-weight: 600; */
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 16px;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.quote-author {
+    font-size: 16px;
+    font-weight: bold;
+    /* font-weight: bold; */
+    /* margin-bottom: 20px; */
+    margin-top: auto;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.quote-tags {
+    display: flex;
+    justify-content: center;
+}
+
+.quote-tags span {
+    background-color: #ccc;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+
+.quote-actions {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tag-dropdown {
+    margin-right: 10px;
+}
+
+.new-quote-button {
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.new-quote-button:hover {
+    background-color: #3e8e41;
+}
+
+.bookmark-button {
+    background-color: #2196f3;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.bookmark-button:hover {
+    background-color: #0c7cd5;
+}
+
+.bookmark-list {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+
+.bookmark-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bookmark-list li {
     background-color: #d05252;
     border-radius: 20px;
     width: 40vw;
@@ -30,132 +161,51 @@ body {
     color: white;
 }
 
-.quote-text {
- font-size: 24px;
-  /* font-weight: 600; */
-  line-height: 1.4;
-  text-align: center;
-  margin-bottom: 16px;
+.bookmark-list .bookmark-text {
+    font-size: 24px;
+    /* font-weight: 600; */
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 16px;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-
-.quote-author {
-    font-size: 24px;
+.bookmark-list .bookmark-author {
+    font-size: 16px;
+    font-weight: bold;
     /* font-weight: bold; */
-    margin-bottom: 20px;
-  }
-  
-  .quote-tags {
+    /* margin-bottom: 20px; */
+    margin-top: auto;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.bookmark-list .bookmark-tags {
     display: flex;
     justify-content: center;
-  }
-  
-  .quote-tags span {
-    background-color: #ccc;
-    color: #fff;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 5px 10px;
-    margin-right: 5px;
-  }
-  
-  .quote-actions {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .tag-dropdown {
-    margin-right: 10px;
-  }
-  
-  .new-quote-button {
-    background-color: #4caf50;
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 5px 5px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .new-quote-button:hover {
-    background-color: #3e8e41;
-  }
-  
-  .bookmark-button {
-    background-color: #2196f3;
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 5px 5px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .bookmark-button:hover {
-    background-color: #0c7cd5;
-  }
-  
-  .bookmark-list {
-    padding: 20px;
-  }
-  
-  .bookmark-list h1 {
-    margin-bottom: 20px;
-  }
-  
-  .bookmark-list ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .bookmark-list li {
-    margin-bottom: 20px;
-  }
-  
-  .bookmark-list .bookmark-text {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .bookmark-list .bookmark-author {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .bookmark-list .bookmark-tags {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .bookmark-list .bookmark-tags span {
+}
+
+.bookmark-list .bookmark-tags span {
     background-color: #ccc;
     color: #fff;
     font-size: 12px;
     font-weight: bold;
     padding: 5px 10px;
     margin-right: 5px;
-  }
-  
-  .not-found {
+}
+
+.not-found {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
-  
-  .not-found h1 {
+}
+
+.not-found h1 {
     font-size: 48px;
     font-weight: bold;
     color: #c0392b;
-  }
-  
+}
