@@ -17,20 +17,31 @@ body {
 }
 
 .quote-container {
-  text-align: center;
-  margin-bottom: 20px;
+    background-color: #d05252;
+    border-radius: 20px;
+    width: 40vw;
+    height: 20vh;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
 }
 
 .quote-text {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 10px;
+ font-size: 24px;
+  /* font-weight: 600; */
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 16px;
 }
 
 
 .quote-author {
     font-size: 24px;
-    font-weight: bold;
+    /* font-weight: bold; */
     margin-bottom: 20px;
   }
   
@@ -51,6 +62,8 @@ body {
   .quote-actions {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    gap: 20px;
   }
   
   .tag-dropdown {
@@ -62,9 +75,9 @@ body {
     color: #fff;
     font-size: 16px;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 5px 5px;
     border: none;
-    border-radius: 4px;
+    border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
@@ -78,9 +91,9 @@ body {
     color: #fff;
     font-size: 16px;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 5px 5px;
     border: none;
-    border-radius: 4px;
+    border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }

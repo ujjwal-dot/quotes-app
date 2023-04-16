@@ -1,13 +1,17 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import '../style.css'
+import { Link } from 'react-router-dom';
 
 
-const BookmarkList = () => {
+const BookMarkList = () => {
   const bookmarks = useSelector((state) => state.bookmarks);
 
   return (
     <div className="bookmark-list">
+      <Link to={'/'} className='new-quote-button'>Home</Link>
+
+        
       <h1>Bookmarks</h1>
       {bookmarks.length > 0 ? (
         <ul>
@@ -29,4 +33,4 @@ const BookmarkList = () => {
   );
 };
 
-export default BookmarkList;
+export default BookMarkList;
