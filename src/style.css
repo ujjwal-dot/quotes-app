@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+}
+
+.quote-generator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.quote-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.quote-text {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+.quote-author {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .quote-tags {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .quote-tags span {
+    background-color: #ccc;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin-right: 5px;
+  }
+  
+  .quote-actions {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .tag-dropdown {
+    margin-right: 10px;
+  }
+  
+  .new-quote-button {
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .new-quote-button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .bookmark-button {
+    background-color: #2196f3;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bookmark-button:hover {
+    background-color: #0c7cd5;
+  }
+  
+  .bookmark-list {
+    padding: 20px;
+  }
+  
+  .bookmark-list h1 {
+    margin-bottom: 20px;
+  }
+  
+  .bookmark-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .bookmark-list li {
+    margin-bottom: 20px;
+  }
+  
+  .bookmark-list .bookmark-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .bookmark-list .bookmark-author {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .bookmark-list .bookmark-tags {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .bookmark-list .bookmark-tags span {
+    background-color: #ccc;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin-right: 5px;
+  }
+  
+  .not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .not-found h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #c0392b;
+  }
+  
