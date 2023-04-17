@@ -31,7 +31,7 @@ function Nav() {
   }
 
   const linkStyle2={
-    fontWeight:isHover2?"800":"normal",
+    fontWeight:isHover2?"bold":"normal",
     color:"white",
     padding: '20px 50px',
     textDecoration:"none",

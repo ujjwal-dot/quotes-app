@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route,Routes, Switch, Link } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, combineReducers } from 'redux';
 import thunk from 'redux-thunk';
@@ -34,28 +34,28 @@ const addBookmark = (quote) => {
 
 function App() {
 
-  document.body.style = 'background: #4e27a3;';
-
+  // document.body.style = 'background: #4e27a3;';
+  
   return (
-
-
+   
+   
     <Provider store={store}>
-
+      
       <Router>
-        <Nav />
+      <Nav/>
         <Routes>
-
-          <Route exact path="/" element={<QuoteGenerator addBookmark={addBookmark} />} />
-
-          <Route path="/bookmarks" element={<BookMarkList />} />
-
-
-          <Route path="*" element={<NotFound />} />
-
+           
+          <Route exact path="/" element={<QuoteGenerator addBookmark={addBookmark}/>}/>
+          
+          <Route path="/bookmarks" element={<BookMarkList/>}/>
+           
+          
+          <Route path="*" element={<NotFound/>}/>
+            
         </Routes>
       </Router>
     </Provider>
-
+   
   );
 }
 
